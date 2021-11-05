@@ -16,6 +16,7 @@ require: scenario/goToMenu.sc
 require: scenario/quickSave.sc
 require: scenario/quickLoad.sc
 require: scenario/continueGame.sc
+require: scenario/startNewGame.sc
 require: scenario/serverActions.sc
 
 
