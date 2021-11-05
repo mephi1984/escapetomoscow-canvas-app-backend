@@ -45,3 +45,12 @@ theme: /
             "Добавь запись помыть машину"
             "Выйди"
             
+    state: ВозвратКИгреЗавершен
+        event!: return_to_game_completed
+        event!: RETURN_TO_GAME_COMPLETED
+
+        random: 
+            a: Готово!
+            a: Сделано!
+            a: Выполнено!
+            

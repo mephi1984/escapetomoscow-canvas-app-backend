@@ -19,3 +19,10 @@ function deleteNote(id, context){
         id: id 
     }, context, "udovolstvie");
 }
+
+function returnToGame(context){
+    addAction({
+        type: "return_to_game",
+        id: 0
+    }, context, "udovolstvie");
+}

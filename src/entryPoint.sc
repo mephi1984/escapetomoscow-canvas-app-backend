@@ -11,6 +11,7 @@ require: js/findItem.js
 require: scenario/addNote.sc
 require: scenario/doNote.sc
 require: scenario/deleteNote.sc
+require: scenario/returnToGame.sc
 require: scenario/serverActions.sc
 
 
@@ -22,7 +23,7 @@ patterns:
     $OpenKeyWords = (включи|включить|включай|запусти|запустить|запускай|играть|
         поиграть|поиграем|навык|игра|игру|скил|скилл|приложение|апп|сыграем|
         открой|поиграй со мной|сыграть|давай играть|активируй|давай|поиграем)
-    $projectName = (Название вашего навыка)
+    $projectName = (Побег в Москву)
 
 
 theme: /
@@ -40,11 +41,11 @@ theme: /
             $temp.appeal = $request.rawRequest.payload.character.appeal;
             
         if: $temp.appeal == "official"
-            a: Добро пожаловать в заметки! Чтобы добавить новую, просто скажите "Запомни" и  нужный текст.
+            a: Добро пожаловать в Побег в Москву! Чтобы добавить новую, просто скажите "Запомни" и  нужный текст.
         elseif: $temp.appeal == "no_official"
-            a: Добро пожаловать в заметки! Чтобы добавить новую, просто скажи "Запомни" и  нужный текст.
+            a: Добро пожаловать в Побег в Москву! Чтобы добавить новую, просто скажи "Запомни" и  нужный текст.
         else:
-            a: Добро пожаловать в заметки!
+            a: Добро пожаловать в Побег в Москву!
 
 
     state: Fallback
