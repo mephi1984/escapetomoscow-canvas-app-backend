@@ -8,10 +8,14 @@ require: js/actions.js
 require: js/findItem.js
 
 # Подключение сценарных файлов
-require: scenario/addNote.sc
-require: scenario/doNote.sc
-require: scenario/deleteNote.sc
+#require: scenario/addNote.sc
+#require: scenario/doNote.sc
+#require: scenario/deleteNote.sc
 require: scenario/returnToGame.sc
+require: scenario/goToMenu.sc
+require: scenario/quickSave.sc
+require: scenario/quickLoad.sc
+require: scenario/continueGame.sc
 require: scenario/serverActions.sc
 
 
@@ -41,9 +45,9 @@ theme: /
             $temp.appeal = $request.rawRequest.payload.character.appeal;
             
         if: $temp.appeal == "official"
-            a: Добро пожаловать в Побег в Москву! Чтобы добавить новую, просто скажите "Запомни" и  нужный текст.
+            a: Добро пожаловать в Побег в Москву!
         elseif: $temp.appeal == "no_official"
-            a: Добро пожаловать в Побег в Москву! Чтобы добавить новую, просто скажи "Запомни" и  нужный текст.
+            a: Добро пожаловать в Побег в Москву!
         else:
             a: Добро пожаловать в Побег в Москву!
 
