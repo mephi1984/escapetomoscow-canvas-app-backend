@@ -18,6 +18,7 @@ require: scenario/quickLoad.sc
 require: scenario/continueGame.sc
 require: scenario/startNewGame.sc
 require: scenario/serverActions.sc
+require: scenario/tellHelp.sc
 
 
 patterns:
@@ -46,11 +47,11 @@ theme: /
             $temp.appeal = $request.rawRequest.payload.character.appeal;
             
         if: $temp.appeal == "official"
-            a: Добро пожаловать в Побег в Москву!
+            a: Приятной вам игры в Побег в Москву! Чтобы узнать все голосовые команды, скажите - Помощь.
         elseif: $temp.appeal == "no_official"
-            a: Добро пожаловать в Побег в Москву!
+            a: Приятной игры в Побег в Москву! Чтобы узнать все голосовые команды, скажи - Помощь.
         else:
-            a: Добро пожаловать в Побег в Москву!
+            a: Приятной вам игры в Побег в Москву! Чтобы узнать все голосовые команды, скажите - Помощь.
 
 
     state: Fallback
